@@ -1,0 +1,47 @@
+﻿<Window x:Class="LargeScriptFileModifier.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LargeScriptFileModifier"
+        mc:Ignorable="d"
+        Title="Large script-file modifier" Height="240" Width="640"  WindowStartupLocation="CenterScreen">
+    <DockPanel LastChildFill="True">
+        <!--ModificationCount-->
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+            <Label Content="ModificationCount : " />
+            <TextBlock x:Name="TextBlock_ModifCount" Text="{Binding ModificationCount}" />
+        </StackPanel>
+        <GroupBox DockPanel.Dock="Top" BorderThickness="4" Padding="4,4"
+                  Margin="40,8" Header="Modification Settings">
+            <StackPanel MinHeight="60" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Separator />
+                    <TextBox Text="{Binding MyFolderPath}" />
+                    <TextBox Text="{Binding MyFileOrg}" />
+                    <Separator />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Separator />
+                    <TextBox Text="{Binding MyFolderPath}" />
+                    <TextBox Text="{Binding MyFileNew}" />
+                    <Separator />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Separator />
+                    <TextBox Text="{Binding StringOld}" />
+                    <Separator />
+                    <Label Content=" ==>> " />
+                    <Separator />
+                    <TextBox Text="{Binding StringNew}" />
+                    <Separator />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <DockPanel DockPanel.Dock="Bottom">
+            <Button x:Name="Button_start" Content="Start" MinHeight="46"
+                     FontSize="30" FontFamily="Calibri" FontWeight="Bold"
+                    Click="Button_start_Click" />
+        </DockPanel>
+    </DockPanel>
+</Window>

@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LargeScriptFileModifier" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="FolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\temp\</Value>
+    </Setting>
+    <Setting Name="FileOrg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MUP.xml</Value>
+    </Setting>
+    <Setting Name="FileNew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Rewrote.xml</Value>
+    </Setting>
+    <Setting Name="StringOld" Type="System.String" Scope="User">
+      <Value Profile="(Default)">deviceID</Value>
+    </Setting>
+    <Setting Name="StringNew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">systemUI</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
